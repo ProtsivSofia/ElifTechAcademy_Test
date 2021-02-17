@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bank.css">
+    <link href="https://fonts.googleapis.com/css2?family=Doppio+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+            <div class="header_inner">
+                <div class="header_logo">bank</div>
+                <nav class="nav">
+                    <a href="#about_title" class="nav_link">home</a>
+                    <a href="#main_title" class="nav_link">about</a>
+                    <a href="#subscribe" class="nav_link">mortgage</a>
+                </nav>
+    </header>
+
+    <div class="intro">
+            <div class="intro_inner">
+                <h1 class="intro_title">opportunities</h1>
+                <h2 class="intro_suptitle">Banks for everyone.</h2>
+            </div>
+    </div>
+
+    <main class="main">
+        <h2 class="main_title" id="main_title">Choose the best</h2>
+        <div class="main_container">
+                <div class="tabPic active" data-tab="#tab1">
+                    <img src="img/bank1.jfif" alt="">
+                    <p>bank 1</p>
+                </div>
+                <div class="tabPic" data-tab="#tab2">                   
+                    <img src="img/bank2.jfif" alt="">
+                    <p>bank 2</p>
+                </div>
+                <div class="tabPic" data-tab="#tab3">                   
+                    <img src="img/bank3.jfif" alt="">
+                    <p>bank 3</p>
+                </div>
+        </div>
+    </main>
+    <div class="tabText" id="tabText">
+        <div class="infa active" id="tab1">
+            <span class="subname">BANK 1</span>
+            <h1 class="name">Bank name<br></h1>
+            
+            <span class="subname">7 %</span>
+            <h1 class="name">Interest rate<br></h1>
+            
+            <span class="subname">100 000 $</span>
+            <h1 class="name">Maximum loan<br></h1>
+    
+            <span class="subname">10 %</span>
+            <h1 class="name">Minimum down payment<br></h1>
+
+            <span class="subname">1 year</span>
+            <h1 class="name">Loan term<br></h1>
+
+        </div>
+        <div class="infa" id="tab2">
+            <span class="subname">BANK 2</span>
+            <h1 class="name">Bank name<br></h1>
+            
+            <span class="subname">3 %</span>
+            <h1 class="name">Interest rate<br></h1>
+            
+            <span class="subname">300 000 $</span>
+            <h1 class="name">Maximum loan<br></h1>
+    
+            <span class="subname">20 %</span>
+            <h1 class="name">Minimum down payment<br></h1>
+
+            <span class="subname">25 years</span>
+            <h1 class="name">Loan term<br></h1>
+
+        </div>
+        <div class="infa" id="tab3">
+            <span class="subname">BANK 3</span>
+            <h1 class="name">Bank name<br></h1>
+            
+            <span class="subname">5 %</span>
+            <h1 class="name">Interest rate<br></h1>
+            
+            <span class="subname">200 000 $</span>
+            <h1 class="name">Maximum loan<br></h1>
+    
+            <span class="subname">20 %</span>
+            <h1 class="name">Minimum down payment<br></h1>
+
+            <span class="subname">10 years</span>
+            <h1 class="name">Loan term<br></h1>
+
+        </div>
+    </div>
+
+    <div class="mortage">
+        <div class="calc">        
+            <p>Amount borrowed: <input type="text" id="num1"></p>
+            <p>Annual interest rate: <input type="text" id="num2"></p>
+            <p>Number of monthly payments: <input type="text" id="num3"></p>
+            <button onclick="count()">to calculate</button> 
+            <span id="out">Monthly paymant</span></div>
+    </div>
+
+    <script src="js/bank.js"> </script>
+</body>
+</html>
